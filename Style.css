@@ -1,0 +1,407 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #000;
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+} 
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75em;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+
+}
+
+.nav-option a {
+    font-size: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1rem;
+    
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.lib-options img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.25rem 1rem;
+    height: auto;
+    
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    /* margin-top: 0.5rem; */
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge {
+    background-color: #000;
+    color: white;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    z-index: 10;
+}
+
+.sticky-nav-icons img {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-option {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-item {
+    
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.card {
+    background-color: #121212;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 0.75rem;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #232323;
+    
+}
+
+
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-info {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-line {
+    justify-content: center;
+    align-content: center;
+    height: 50%;
+    width: 90%;
+    opacity: 0.5;
+    border-top: 1px solid white;
+}
+
+.music-player {
+    background-color: #000 ;
+    display: flex;
+    height: 6rem;
+}
+
+.music-info {
+    background-color: black;
+    width: 25%;
+    padding-bottom: 1rem;
+    display: flex;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.music-info img {
+    margin: 0.75rem;
+    border-radius: 0.5rem;
+    height: 80%;
+}
+
+.song-name {
+    color: white;
+    font-weight: 500;
+}
+
+.song-info {
+    text-overflow: hidden;
+    opacity: 0.7;
+    font-size: small;
+}
+
+
+.music-control {
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.player {
+    height: 50%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+
+.player .icon{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    height: 1rem;
+    margin: 0 1.7rem 0 1.7rem;
+    margin-top: 1.15rem;
+    opacity: 0.75;
+    transition-duration: 0.2s;
+
+}
+
+.player .icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.player .icon1 {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+.player .icon1:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.music {
+    height: 50%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    margin-top: 1rem;
+   
+}
+
+.music .progress-bar {
+    height: 1rem;
+    width: 30rem;
+    appearance: none;
+    background-color: black;
+    cursor: pointer;
+}
+ 
+.music .progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+ 
+.music .progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: #1bd760;
+    border-radius:50%;
+    margin-top: -2.5px;
+}
+
+
+.player-control {
+    margin: 1rem;
+    align-content: center;
+    
+}
+
+.material-symbols-outlined .progress-bar {
+    height: 1rem;
+    width: 6rem;
+    appearance: none;
+    background-color: black;
+    cursor: pointer;
+}
+ 
+.material-symbols-outlined .progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+.material-symbols-outlined .progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: #1bd760;
+    border-radius:50%;
+    margin-top: -2px;
+}
+
+
+.material-symbols-outlined {
+    height: 50%;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.material-symbols-outlined .icon {
+    margin-left: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.7;   
+    transition-duration: 0.3s;
+}
+
+.material-symbols-outlined .icon:hover {
+    
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
